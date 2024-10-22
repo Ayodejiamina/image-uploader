@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.subCont {
+  width: 35%;
+  height: fit-content;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.041);
+}
+
+.svg1 {
+  display: block;
+  text-align: end;
+}
+.svg1 svg {
+  font-size: 30px;
+}
+
+.svg2 img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.svg2 svg {
+  background-color: blueviolet;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+.svg2 {
+  text-align: center;
+}
+form {
+  width: 100%;
+}
+form label {
+  display: block;
+  font-weight: 700;
+}
+form .put1 {
+  margin: 15px 0;
+}
+form div input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 10px;
+  width: 95%;
+  background-color: transparent;
+}
+form .url {
+  position: relative;
+}
+form .url svg {
+  position: absolute;
+  right: 25px;
+}
+.saveBtn {
+  text-align: center;
+}
+.saveBtn button {
+  margin-top: 50px;
+  border-radius: 3px;
+  width: 40%;
+  padding: 7px 0px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+}
+#profile,
+#cover {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+.logo {
+  color: blueviolet;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+.overlay-text {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(137, 43, 226, 0.282);
+  border-radius: 5px;
+}
+.overlay-text img {
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .subCont {
+    width: 80%;
+    padding: 40px;
+  }
+}
